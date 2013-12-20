@@ -12,6 +12,7 @@ using namespace std;
 #define GRADE_ONE	1	//SENIOR EXECUTIVE & ASSISTANT MANAGER
 #define GRADE_TWO	2	//JUNIOR EXECUTIVE
 #define GRADE_THREE 3	//ASSISTANT SUPERVISOR & SUPERVISOR
+#define GRADE_FOUR 	4
 
 typedef struct SEmployeeInputDetails
 {
