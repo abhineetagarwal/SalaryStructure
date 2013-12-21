@@ -18,7 +18,7 @@ CSalaryCore::CSalaryCore(PTREMPINPUTDETAILS execInputDetails){
 CSalaryCore::~CSalaryCore(){
 	delete empObj;
 }
-ISalaryStructure* CSalaryCore::getInstance(){
+AbstractSalaryStructure* CSalaryCore::getInstance(){
 	if(executiveInputDetails.execGradeType == GRADE_ONE){
 		return new CGradeOne(executiveInputDetails.execName,executiveInputDetails.isCalOnMonthlyBasis);
 	}

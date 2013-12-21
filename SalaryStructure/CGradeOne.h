@@ -3,7 +3,7 @@
 
 #include "SalaryStructure.h"
 
-class CGradeOne: public ISalaryStructure
+class CGradeOne: public AbstractSalaryStructure
 {
 public:
 	CGradeOne(char *executiveName,bool isCalOnMonthlyBasis);
@@ -11,8 +11,5 @@ public:
 private:
 	void getEmployeeData(PTREMPDATA ptrEmpData);
 	void structureSalaryComponent(UDT empAmount,short calcViaType);
-	void salaryStructuringViaGross();
-	void salaryStructuringViaCTC();
-	void salaryStructuringViaNetPay();
 };
 #endif

@@ -61,7 +61,18 @@ public:
 	virtual void salaryStructuringViaGross() = 0;
 	virtual void salaryStructuringViaCTC() = 0;
 	virtual void salaryStructuringViaNetPay() = 0;
-	virtual void doSalaryStructuringForGross();
+};
+
+class AbstractSalaryStructure:public ISalaryStructure
+{	
+public:
+	//Member Function
+	virtual ~AbstractSalaryStructure(){}
+	virtual void getEmployeeData(PTREMPDATA ptrEmpData) = 0;
+	virtual void structureSalaryComponent(UDT empAmount,short calcViaType) = 0;
+	void salaryStructuringViaGross();
+	void salaryStructuringViaCTC();
+	void salaryStructuringViaNetPay();
 public:
 	//Data Members
 	EMPBASICNORMS empBasicNorms;

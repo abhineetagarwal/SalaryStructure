@@ -28,10 +28,3 @@ if(calcViaType == CALCULATE_VIA_GROSS){
 		salaryStructuringViaNetPay();
 	}
 }
-void CGradeTwo::salaryStructuringViaGross(){
-	doSalaryStructuringForGross();
-}
-void CGradeTwo::salaryStructuringViaCTC(){
-}
-void CGradeTwo::salaryStructuringViaNetPay(){
-}

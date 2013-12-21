@@ -48,7 +48,7 @@ SEmployeeData::SEmployeeData(){
 	employeeEmployeeESI = 0;
 	employeeProfessionalTax = 0;
 }
-void ISalaryStructure::doSalaryStructuringForGross(){
+void AbstractSalaryStructure::salaryStructuringViaGross(){
 	empData.employeeBasicSalary = (empData.employeeGrossSalary * 40)/100;	//40% of Gross Salary
 	empData.employeeHRA = (empData.employeeBasicSalary * 50)/100;			//50% of Basic Salary
 	empData.employeeEmployerPF = (empData.employeeBasicSalary * 12)/100;	//12% of Basic Salary
@@ -83,4 +83,8 @@ void ISalaryStructure::doSalaryStructuringForGross(){
 
 	//Employee Net Salary
 	empData.employeeNetSalary = (empData.employeeGrossSalary - (empData.employeeEmployeeESI + empData.employeeProfessionalTax + empData.employeeEmployeePF));
+}
+void AbstractSalaryStructure::salaryStructuringViaCTC(){
+}
+void AbstractSalaryStructure::salaryStructuringViaNetPay(){
 }

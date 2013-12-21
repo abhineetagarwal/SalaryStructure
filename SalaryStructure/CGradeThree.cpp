@@ -29,10 +29,3 @@ void CGradeThree::structureSalaryComponent(UDT empAmount, short calcViaType){
 		salaryStructuringViaNetPay();
 	}
 }
-void CGradeThree::salaryStructuringViaGross(){
-	doSalaryStructuringForGross();
-}
-void CGradeThree::salaryStructuringViaCTC(){
-}
-void CGradeThree::salaryStructuringViaNetPay(){
-}

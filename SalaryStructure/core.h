@@ -32,13 +32,13 @@ public:
 	void doStructuringOfSalary();
 	void printSalaryComponent();
 private:
-	ISalaryStructure* getInstance();
+	AbstractSalaryStructure* getInstance();
 	void vWriteToFile(PTREMPDATA ptrWriteEmpData);	
 	void vWriteData(FILE* fp,PTREMPDATA ptrWriteEmpData);
 	UDT calcChoice(bool isMonthly,UDT value);// Used for checking the calculation choosen and displaying the number accordingly
 public:
 	//Data Members
 	EMPINPUTDETAILS executiveInputDetails;
-	ISalaryStructure *empObj;
+	AbstractSalaryStructure *empObj;
 };
 #endif
